@@ -7,8 +7,8 @@ services:
     environment:
       VERSION: "1.17.1"
       EULA: "TRUE"
-      TYPE: "BUKKIT"
-      OPS: "Rexter"
+      TYPE: "SPIGOT"
+      OPS: "Rexter_Kuro"
       PAPER: "TRUE"
       BUILDTools: "TRUE"
     stdin_open: true
