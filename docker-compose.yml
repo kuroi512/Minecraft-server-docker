@@ -1,19 +1,15 @@
-version: '3'
+version: '3.8'
+
 services:
   minecraft:
     image: itzg/minecraft-server
+    container_name: minecraft_server
     ports:
       - "25565:25565"
     environment:
-      VERSION: "1.17.1"
       EULA: "TRUE"
       TYPE: "SPIGOT"
-      OPS: "Rexter_Kuro"
-      PAPER: "TRUE"
-      BUILDTools: "TRUE"
-    stdin_open: true
-    tty: true
+      VERSION: "1.20.6"
     volumes:
-      - ./data:/data
-      - ./plugins:/plugins
+      - "./minecraft_data:/data"
     restart: always
